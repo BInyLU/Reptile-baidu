@@ -38,7 +38,7 @@ module.exports = function({word,path,num=99}){
     ;
 
     //得到path 与 创建文件夹
-    path = path || Path.join(__dirname,"/"+word);
+    path = path || Path.join(__dirname,"./"+word);
     try{fs.mkdirSync(path)}catch ( e ){console.log(e)}
 
     //执行请求
